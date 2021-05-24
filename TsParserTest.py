@@ -577,7 +577,7 @@ class TsDescriptorData(TsEitData):
                 print(AribString(char.readlist('uint:8,'*(text_length.uint))).convert_utf(),'\n')
                 # 短形式イベント記述子のパース - end
 
-file = TsFile(file='D:\Tv_rec\[新]Ｄｒ．ＳＴＯＮＥ　＃１「ＳＴＯＮＥ　ＷＯＲＬＤ」.ts')
+file = TsFile(file=sys.argv[1])
 file.read(packet_count=10000)
 
 i = 0
