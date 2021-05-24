@@ -7,6 +7,10 @@ MPEG2 TS においてARIB STD-B10に定められているEITテーブルの短�
 * 放送局やジャンル情報が入っている記述子への対応
 * モジュール化
 
+# 課題
+* 異なるPIDのEITを同時に解析できない
+* CRCの検証をしていない
+
 # 謝辞
 * youzaka/ariblib - aribstr.py
 ```
